@@ -6,5 +6,9 @@ var app = angular.module('personalSite', ['ui.router'])
       templateUrl: "templates/home.html",
       controller: "HomeController",
       url: "/home"
+    }).state("/contact", {
+      templateUrl: "templates/contact.html",
+      controller: "ContactController",
+      url: "/contact"
     });
   });
