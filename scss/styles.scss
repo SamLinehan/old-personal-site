@@ -90,5 +90,22 @@ body {
         align-self: center;
       }
     }
+    .portfolio {
+      color: hsl(45, 80%, 98%);
+    }
+    .contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 60px;
+      color: hsl(45, 80%, 98%);
+      h1 {
+        font-size: 3.0em;
+        margin-bottom: 0;
+      }
+      p {
+        font-size: 1.2em;
+      }
+    }
   }
 }
