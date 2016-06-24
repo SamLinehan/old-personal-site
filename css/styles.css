@@ -6,7 +6,9 @@ body {
   body header {
     display: flex;
     justify-content: flex-end;
-    background-color: #394456; }
+    background-color: #394456;
+    width: 100%;
+    white-space: nowrap; }
     body header nav {
       width: 40%; }
       body header nav ul {
@@ -14,22 +16,39 @@ body {
         display: flex;
         justify-content: space-around; }
         body header nav ul li {
-          letter-spacing: .03em;
-          padding: 3px;
-          border-radius: 2px; }
+          letter-spacing: .03em; }
           body header nav ul li a {
             text-decoration: none;
             color: #fefcf6; }
-        body header nav ul li:hover {
+        body header nav ul li > a {
+          position: relative;
+          text-decoration: none; }
+        body header nav ul li > a:before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          bottom: 0;
+          left: 0;
           background-color: #25b11b;
+          visibility: hidden;
+          -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transition: all 0.3s ease-in-out 0s;
+          transition: all 0.3s ease-in-out 0s; }
+        body header nav ul li > a:hover:before {
+          visibility: visible;
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1); }
+        body header nav ul li:hover {
           cursor: pointer; }
   body main .about {
     display: flex;
     flex-direction: column;
     width: 75%;
-    margin-top: 125px;
     margin-left: 12.5%;
-    margin-right: 12.5%; }
+    margin-right: 12.5%;
+    margin-top: 125px; }
     body main .about article {
       display: flex;
       justify-content: space-around;

@@ -7,6 +7,8 @@ body {
     display: flex;
     justify-content: flex-end;
     background-color: hsl(217, 20%, 28%);
+    width: 100%;
+    white-space: nowrap;
     nav {
       width: 40%;
       ul {
@@ -15,15 +17,35 @@ body {
         justify-content: space-around;
         li {
           letter-spacing: .03em;
-          padding: 3px;
-          border-radius: 2px;
           a {
             text-decoration: none;
             color: hsl(45, 80%, 98%);
           }
         }
-        li:hover {
+        li > a {
+          position: relative;
+          text-decoration: none;
+        }
+        li > a:before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          bottom: 0;
+          left: 0;
           background-color: hsl(116, 74%, 40%);
+          visibility: hidden;
+          -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transition: all 0.3s ease-in-out 0s;
+          transition: all 0.3s ease-in-out 0s;
+        }
+        li > a:hover:before {
+          visibility: visible;
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+        }
+        li:hover {
           cursor: pointer;
         }
       }
@@ -34,9 +56,9 @@ body {
       display: flex;
       flex-direction: column;
       width: 75%;
-      margin-top: 125px;
       margin-left: 12.5%;
       margin-right: 12.5%;
+      margin-top: 125px;
       article {
         display: flex;
         justify-content: space-around;
