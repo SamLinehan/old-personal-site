@@ -78,8 +78,7 @@ body {
       margin-left: 5%; }
     body main .portfolio .project {
       display: flex;
-      margin-left: 10%;
-      margin-right: 10%;
+      margin: 0% 10% 5% 10%;
       align-items: center; }
     body main .portfolio .desktopIcons {
       width: 50%;
