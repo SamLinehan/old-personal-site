@@ -99,9 +99,9 @@ body {
         margin-left: 50%;
       }
       .project {
-        display: flex;
         margin: 0% 10% 5% 10%;
         align-items: center;
+        display: flex;
       }
       .desktopIcons {
         width: 50%;
@@ -117,9 +117,13 @@ body {
           opacity: 0.6;
         }
       }
-      img {
+      .imgDiv {
         width: 250px;
         height: 250px;
+        img {
+          width: 250px;
+          height: 250px;
+        }
       }
       aside {
         margin-left: 5%;

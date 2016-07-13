@@ -79,9 +79,9 @@ body {
     body main .portfolio .underscore {
       margin-left: 50%; }
     body main .portfolio .project {
-      display: flex;
       margin: 0% 10% 5% 10%;
-      align-items: center; }
+      align-items: center;
+      display: flex; }
     body main .portfolio .desktopIcons {
       width: 50%;
       display: flex;
@@ -92,9 +92,12 @@ body {
         color: #fefcf6; }
       body main .portfolio .desktopIcons a:hover {
         opacity: 0.6; }
-    body main .portfolio img {
+    body main .portfolio .imgDiv {
       width: 250px;
       height: 250px; }
+      body main .portfolio .imgDiv img {
+        width: 250px;
+        height: 250px; }
     body main .portfolio aside {
       margin-left: 5%;
       display: flex;
