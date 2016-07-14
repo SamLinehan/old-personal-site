@@ -94,7 +94,9 @@ body {
         opacity: 0.6; }
     body main .portfolio .imgDiv {
       width: 250px;
-      height: 250px; }
+      height: 250px;
+      -webkit-flex: 1 0 auto;
+      flex: 1 0 auto; }
       body main .portfolio .imgDiv img {
         width: 250px;
         height: 250px; }
