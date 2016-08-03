@@ -135,14 +135,35 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-top: 60px;
+      margin-top: 0px;
       color: hsl(45, 80%, 98%);
+      form {
+        display: flex;
+        flex-direction: column;
+        * {
+          margin-bottom: 10px;
+          border-radius: 3px;
+          border: none;
+        }
+        input {
+          height: 20px;
+          font-size: 1.0em;
+        }
+        textarea {
+          font-size: 1.0em;
+        }
+        .submitButton {
+          background-color: hsl(116, 74%, 40%);
+          border: none;
+          color: hsl(45, 80%, 98%);
+          height: 30px;
+          font-size: 1.0em;
+          cursor: pointer;
+        }
+      }
       h1 {
         font-size: 3.0em;
-        margin-bottom: 0;
-      }
-      p {
-        font-size: 1.2em;
+        margin-bottom: 20px;
       }
     }
   }
