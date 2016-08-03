@@ -118,9 +118,11 @@ body {
         border: none; }
       body main .contact form input {
         height: 20px;
-        font-size: 1.0em; }
+        font-size: 1.0em;
+        color: #29313d; }
       body main .contact form textarea {
-        font-size: 1.0em; }
+        font-size: 1.0em;
+        color: #29313d; }
       body main .contact form .submitButton {
         background-color: #25b11b;
         border: none;
