@@ -72,6 +72,8 @@ body {
       color: #fefcf6;
       font-size: 1.1em;
       align-self: center; }
+      body main .about p a {
+        color: #fefcf6; }
   body main .portfolio {
     color: #fefcf6; }
     body main .portfolio h1 {
