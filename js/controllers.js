@@ -5,18 +5,28 @@ angular.module("personalSite")
 
 HomeController.$inject = ['$scope'];
 
-ContactController.$inject = ['$scope'];
+ContactController.$inject = ['$scope', '$http'];
 
 PortfolioController.$inject = ['$scope'];
 
-function HomeController($scope) {
-  console.log("Hello From Home Controller");
+function HomeController($scope) {}
+
+function ContactController($scope, $http) {
+
+  $scope.sentMessage = false;
+
+  $scope.sendMessage = function() {
+    var data = {
+      name: $scope.name,
+      sender: $scope.email,
+      message: $scope.message
+    }
+    console.log(data);
+    $http.post("http://localhost:3000", data).then(function(){
+      console.log("Message Sent!");
+      $scope.sentMessage = true;
+    })
+  }
 }
 
-function ContactController($scope) {
-  console.log("Hello from Contact Controller");
-}
-
-function PortfolioController($scope) {
-  console.log("Hello from Portfolio Controller");
-}
+function PortfolioController($scope) {}

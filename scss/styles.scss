@@ -132,6 +132,14 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        .projectInfo {
+          h3 {
+            margin-bottom: 0;
+          }
+          p {
+          margin-top: 3px;
+          }
+        }
       }
     }
     .contact {

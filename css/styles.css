@@ -105,6 +105,10 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center; }
+      body main .portfolio aside .projectInfo h3 {
+        margin-bottom: 0; }
+      body main .portfolio aside .projectInfo p {
+        margin-top: 3px; }
   body main .contact {
     display: flex;
     flex-direction: column;
