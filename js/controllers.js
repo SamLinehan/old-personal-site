@@ -22,7 +22,7 @@ function ContactController($scope, $http) {
       message: $scope.message
     }
     console.log(data);
-    $http.post("http://localhost:3000", data).then(function(){
+    $http.post("https://thawing-journey-19884.herokuapp.com/", data).then(function(){
       console.log("Message Sent!");
       $scope.sentMessage = true;
     })
