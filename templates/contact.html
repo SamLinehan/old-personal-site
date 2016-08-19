@@ -8,6 +8,7 @@
     <label for="message">Message:</label>
     <textarea name="message" rows="10" cols="50" ng-model="message"></textarea>
     <input class="submitButton" type="submit" value="Send" />
+    <div id="loading-bar-container"></div>
   </form>
   <h2 ng-model="name" ng-show="sentMessage">Thanks, {{name}}!</h2>
 </section>

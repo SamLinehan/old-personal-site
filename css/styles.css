@@ -115,6 +115,8 @@ body {
     align-items: center;
     margin-top: 0px;
     color: #fefcf6; }
+    body main .contact #loading-bar .bar {
+      position: relative; }
     body main .contact form {
       display: flex;
       flex-direction: column; }

@@ -1,4 +1,4 @@
-var app = angular.module('personalSite', ['ui.router'])
+var app = angular.module('personalSite', ['ui.router', 'angular-loading-bar'])
   .config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise("/home");
 
@@ -15,4 +15,8 @@ var app = angular.module('personalSite', ['ui.router'])
       controller: "PortfolioController",
       url: "/portfolio"
     });
-  });
+  })
+  .config(['cfpLoadingBarProvider', function(cfpLoadingBarProvider) {
+    cfpLoadingBarProvider.includeSpinner = false;
+    cfpLoadingBarProvider.parentSelector = '#loading-bar-container';
+  }]);
