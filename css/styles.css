@@ -45,13 +45,11 @@ body {
           transform: scaleX(1); }
         body header nav ul li:hover {
           cursor: pointer; }
-      @media (max-width: 900px) {
-        body header nav .navLinks {
-          display: none; }
-        body header nav .hamburger {
-          display: block;
-          float: right;
-          margin-right: 10px; } }
+  body main.ng-enter {
+    transition: .5s;
+    opacity: 0; }
+  body main.ng-enter-active {
+    opacity: 1; }
   body main .about {
     display: flex;
     flex-direction: column;
@@ -151,18 +149,5 @@ body {
     body main .contact h1 {
       font-size: 3.0em;
       margin-bottom: 20px; }
-  body .sideNav {
-    display: none;
-    float: right; }
-    body .sideNav .sideLinks {
-      list-style: none;
-      display: flex;
-      justify-content: space-around; }
-      body .sideNav .sideLinks a {
-        text-decoration: none;
-        color: #fefcf6; }
-    @media (max-width: 900px) {
-      body .sideNav .sideNav {
-        display: flex; } }
 
 /*# sourceMappingURL=styles.css.map */

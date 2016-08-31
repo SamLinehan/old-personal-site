@@ -1,4 +1,4 @@
-var app = angular.module('personalSite', ['ui.router', 'angular-loading-bar'])
+var app = angular.module('personalSite', ['ui.router', 'angular-loading-bar', 'ngAnimate'])
   .config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise("/home");
 
