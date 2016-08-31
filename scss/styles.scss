@@ -11,6 +11,10 @@ body {
     white-space: nowrap;
     nav {
       width: 40%;
+      .hamburger {
+        color: hsl(45, 80%, 98%);
+        display: none;
+      }
       ul {
         list-style: none;
         display: flex;
@@ -47,6 +51,16 @@ body {
         }
         li:hover {
           cursor: pointer;
+        }
+      }
+      @media(max-width: 900px) {
+        .navLinks {
+          display: none;
+        }
+        .hamburger {
+          display: block;
+          float: right;
+          margin-right: 10px;
         }
       }
     }
@@ -180,6 +194,24 @@ body {
       h1 {
         font-size: 3.0em;
         margin-bottom: 20px;
+      }
+    }
+  }
+  .sideNav {
+    display: none;
+    float: right;
+    .sideLinks {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      a {
+        text-decoration: none;
+        color: hsl(45, 80%, 98%);
+      }
+    }
+    @media(max-width: 900px) {
+      .sideNav {
+        display: flex;
       }
     }
   }
