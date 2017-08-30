@@ -7,17 +7,21 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">  
   </head>
   <body>
-    <header>
-      <h1>SAM LINEHAN</h1>
-      <nav>
-        <a>About</a>
-        <p>/</p>
-        <a>Portfolio</a>
-        <p>/</p>            
-        <a>Contact</a>            
-    </nav>                 
-    </header> 
+    <div id="app">
+      <header>
+        <h1>{{ header }}</h1>
+        <nav>
+          <router-link to="/about">About</router-link>
+          <p>/</p>          
+          <router-link to="/portfolio">Portfolio</router-link>
+          <p>/</p>          
+          <router-link to="/contact">Contact</router-link>           
+        </nav>                 
+      </header> 
+      <router-view></router-view>
+    </div>
     <script src="https://unpkg.com/vue"></script>
-    <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script src="./dist/main.js"></script>
   </body>
 </html>
