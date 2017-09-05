@@ -19,7 +19,9 @@ gulp.task('sass:watch', function () {
   gulp.watch('./scss/*.scss', ['sass']);
 });
 
-gulp.task('babel', () => {
+// Babel not needed yet
+
+/*gulp.task('babel', () => {
     gulp.src('./src/*.js')
         .pipe(babel({
             ignore: 'gulpfile.babel.js'
@@ -31,4 +33,4 @@ gulp.task('babel:watch', () => {
     gulp.watch('./src/*.js', ['babel']);
 });
  
-gulp.task('watch', ['babel', 'babel:watch', 'sass', 'sass:watch']);
+gulp.task('watch', ['babel', 'babel:watch', 'sass', 'sass:watch']);*/
